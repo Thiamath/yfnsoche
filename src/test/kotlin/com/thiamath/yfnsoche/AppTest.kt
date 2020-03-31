@@ -3,13 +3,12 @@
  */
 package com.thiamath.yfnsoche
 
+import org.springframework.boot.test.context.SpringBootTest
 import kotlin.test.Test
-import kotlin.test.assertNotNull
 
+@SpringBootTest
 class AppTest {
     @Test
     fun testAppHasAGreeting() {
-        val classUnderTest = App()
-        assertNotNull(classUnderTest.greeting, "app should have a greeting")
     }
 }

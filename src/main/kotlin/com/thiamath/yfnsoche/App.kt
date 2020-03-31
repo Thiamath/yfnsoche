@@ -3,13 +3,12 @@
  */
 package com.thiamath.yfnsoche
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello world."
-        }
-}
+import org.springframework.boot.SpringApplication
+import org.springframework.boot.autoconfigure.SpringBootApplication
+
+@SpringBootApplication
+class App
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+    SpringApplication.run(App::class.java, *args)
 }
