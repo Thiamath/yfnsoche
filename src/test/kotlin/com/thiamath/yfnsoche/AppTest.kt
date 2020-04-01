@@ -14,7 +14,7 @@ class AppTest {
     lateinit var configuration: Configuration
 
     @Test
-    fun testAppHasAGreeting() {
+    fun testAppHasContext() {
         println(configuration)
     }
 }

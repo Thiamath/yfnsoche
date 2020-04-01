@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "application.yfnsoche.retrievalUrl",
+      "type": "java.lang.String",
+      "description": "Retrieval URL for the payslips."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 package com.thiamath.yfnsoche.repositories
 
 import com.thiamath.yfnsoche.model.Payslip
-import java.util.*
+import java.time.LocalDate
 
 interface PayslipsRepository {
-    fun getMonthPayslips(date: GregorianCalendar): List<Payslip>
+    fun getMonthPayslips(date: LocalDate): List<Payslip>
 }
