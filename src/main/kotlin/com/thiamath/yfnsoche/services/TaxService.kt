@@ -6,7 +6,7 @@ interface TaxService {
     /**
      * Modify the tax rate for the given year and month.
      */
-    fun modifyTaxRate(taxRate: BigDecimal, year: Int, month: Int): BigDecimal?
+    fun modifyTaxRate(taxRate: BigDecimal?, year: Int, month: Int): BigDecimal?
 
     /**
      * TODO Remove a tax modification for a given year and month.
