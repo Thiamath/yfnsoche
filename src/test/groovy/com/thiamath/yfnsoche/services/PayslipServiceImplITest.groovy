@@ -12,12 +12,13 @@ class PayslipServiceImplITest extends Specification {
         def payslipService = new PayslipServiceImpl(
                 Stub(PayslipRepository) {
                     getMonthPayslips(year, month) >> retrievedPayslips
-                }
+                },
+                taxService
         )
         and:
         taxService.modifyTaxRate(taxModification, year, month)
         expect:
-        payslipService.getMonthPayslips(year, month) is modifiedPayslips
+        payslipService.getMonthPayslips(year, month) == modifiedPayslips
 
         where:
         year | month | retrievedPayslips          | taxModification || modifiedPayslips
