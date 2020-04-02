@@ -9,6 +9,11 @@ interface TaxService {
     fun modifyTaxRate(taxRate: BigDecimal, year: Int, month: Int): BigDecimal?
 
     /**
+     * TODO Remove a tax modification for a given year and month.
+     */
+    //fun clearTaxRate(year: Int, month: Int): BigDecimal?
+
+    /**
      * Get the possibly modified tax rate or null if there's no modification.
      */
     fun getTaxRate(year: Int, month: Int): BigDecimal?

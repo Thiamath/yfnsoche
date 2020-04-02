@@ -25,6 +25,7 @@ class PayslipRepositoryWeb(
      * @param month The month to query.
      * @return A [List] of [Payslip] with the retrieved payslips.
      */
+    // TODO I'd like to implement some kind of TTL cache here like Caffeine
     override fun getMonthPayslips(year: Int, month: Int): List<Payslip> =
             try {
                 Optional.ofNullable(restTemplate.getForObject(configuration.retrievalUrl, String::class.java, "$year$month"))
