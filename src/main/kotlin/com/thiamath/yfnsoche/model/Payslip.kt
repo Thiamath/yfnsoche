@@ -3,8 +3,6 @@ package com.thiamath.yfnsoche.model
 import java.math.BigDecimal
 import java.time.LocalDate
 
-const val PAYSLIP_STRING_LENGTH = 69
-
 data class Payslip(
         val id: Long,
         val vatIdNumber: String,
@@ -17,6 +15,7 @@ data class Payslip(
         val net: BigDecimal
 ) {
     companion object {
+        const val PAYSLIP_STRING_LENGTH = 69
         /**
          * This method is a convenient method to create a [Payslip] from a String.
          * It will assume that the given string is correctly formatted and will create BigDecimal
