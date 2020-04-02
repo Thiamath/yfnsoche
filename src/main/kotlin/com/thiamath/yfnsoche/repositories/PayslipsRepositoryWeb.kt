@@ -18,7 +18,7 @@ class PayslipsRepositoryWeb(
     /**
      * Retrieve the payslips of the year and month from the given date.
      * Any retrieved payslip that is wrong formatted will be removed from the list
-     * and logged accordingly
+     * and logged accordingly.
      *
      * @param date A [LocalDate] with the year and month to be queried.
      * @return A [List] of [Payslip] with the retrieved payslips.

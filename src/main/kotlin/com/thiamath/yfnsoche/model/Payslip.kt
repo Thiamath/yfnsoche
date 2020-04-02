@@ -23,15 +23,15 @@ data class Payslip(
          * objects according to that. If the string format has not been checked, assume possible
          * [ArrayIndexOutOfBoundsException] or [NumberFormatException] to occur.
          * @param payslipString The payslip String. It will keep the following structure:
-         * * 12 chars 👉 ID
-         * * 9 chars 👉 Vat, IdNumber
-         * * 8 chars 👉 Date (Format: YYYYMMDD)
-         * * 8 chars 👉 Gross (6 integers + 2 decimals)
-         * * 4 chars 👉 % National Insurance Rate (2 integers + 2 decimals)
-         * * 8 chars 👉 Amount National Insurance deductions (6 integers + 2 decimals)
-         * * 4 chars 👉 % Tax Rate (2 integers + 2 decimals)
-         * * 8 chars 👉 Amount Taxes (6 integers + 2 decimals)
-         * * 8 chars 👉 Net (6 integers + 2 decimals)
+         * * 12 chars -> ID
+         * * 9 chars -> Vat, IdNumber
+         * * 8 chars -> Date (Format: YYYYMMDD)
+         * * 8 chars -> Gross (6 integers + 2 decimals)
+         * * 4 chars -> % National Insurance Rate (2 integers + 2 decimals)
+         * * 8 chars -> Amount National Insurance deductions (6 integers + 2 decimals)
+         * * 4 chars -> % Tax Rate (2 integers + 2 decimals)
+         * * 8 chars -> Amount Taxes (6 integers + 2 decimals)
+         * * 8 chars -> Net (6 integers + 2 decimals)
          */
         @JvmStatic
         fun fromString(payslipString: String) = Payslip(
